@@ -18,7 +18,14 @@ class BIGTESTINGGRPROJECT_API UChooseNextWaypoint : public UBTTaskNode
 
 protected:
 	UPROPERTY(EditAnywhere, Category = "BlackboardCppMade")
-		//Trebuie sa fie structura pentru dropdown?
+		//Trebuie sa fie structura pentru dropdown? // Aparent nu
 		 FBlackboardKeySelector IndexKey;
+
+	UPROPERTY(EditAnywhere, Category = "BlackboardCppMade")
+		//Trebuie sa fie structura pentru dropdown? // Aparent nu
+		FBlackboardKeySelector WaypointKey;
+
+	UPROPERTY(EditAnywhere)
+		TArray<AActor*> PatrolWaypoints;
 	
 };
